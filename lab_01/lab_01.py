@@ -1,22 +1,22 @@
-import os  # Додаємо бібліотеку для роботи з файлами
+import os  # Додає бібліотеку
 from collections import Counter
 
 def calculate_distance(left_list, right_list):
     """
-    Обчислює загальну відстань між числами у двох списках після сортування.
+    Обчисл загальну відстань між числами в двох списках після сортування.
     """
-    if not left_list or not right_list:  # Перевірка, чи списки не порожні
+    if not left_list or not right_list:  # Перевіряє, чи списки не порожні
         return 0
     
     left_sorted = sorted(left_list)
-    right_sorted = sorted(right_list)
+    right_sorted = sorted(right_list) # Сортує 
 
     return sum(abs(l - r) for l, r in zip(left_sorted, right_sorted))
 
 
 def calculate_similarity_score(left_list, right_list):
     """
-    Обчислює коефіцієнт схожості між двома списками.
+    Обчислює схожості між двома списками
     """
     if not left_list or not right_list:
         return 0
@@ -27,10 +27,10 @@ def calculate_similarity_score(left_list, right_list):
 
 def read_input_file(file_path):
     """
-    Зчитує числа з файлу та повертає два списки чисел.
+    Зчитує числа з файлу та повертає два списки чисел
     """
-    if not os.path.exists(file_path):  # Перевіряємо, чи існує файл
-        print(f"Помилка: Файл {file_path} не знайдено!")
+    if not os.path.exists(file_path):  # Перевіряємо чи файл є
+        print(f"Помика: Файл {file_path} не знайдено!")
         return [], []
 
     left_list, right_list = [], []
@@ -44,11 +44,11 @@ def read_input_file(file_path):
             except ValueError:
                 print(f"Помилка у рядку: {line.strip()} (пропущено)")
 
-    return left_list, right_list
+    return left_list, right_list # Знаходить помилку в коді
 
 
 if __name__ == "__main__":
-    file_path = "input.txt"  # Вказуємо ім'я файлу без зайвих підпапок
+    file_path = "C:\Users\777\Desktop\Laboratory_work_2\Laboratory_work_2\lab_01\input.txt"  # Вказуємо назву файлу без зайвих підпапок
 
     left_list, right_list = read_input_file(file_path)
 
