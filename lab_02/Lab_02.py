@@ -44,7 +44,7 @@ def count_stable_reports(file_path):
         print(f"Не вдалося знайти файл: {file_path}")
         return None, None
 
-input_file = "C:\Users\777\Desktop\Laboratory_work_2\Laboratory_work_2\lab_02\input.txt"  # Шлях до файлу
+input_file = "C:\\Users\\777\\Desktop\\Laboratory_work_2\\Laboratory_work_2\\lab_02\\input.txt"  # Шлях до файлу
 
 # Виконуємо підрахунок
 stable_reports, total_fixed_reports = count_stable_reports(input_file)
@@ -53,5 +53,4 @@ stable_reports, total_fixed_reports = count_stable_reports(input_file)
 if stable_reports is not None:
     print(f"Кількість стабільних звітів: {stable_reports}")
     print(f"Кількість звітів, що стали стабільними після корекції: {total_fixed_reports}")
-#Поправив посилання на текстовий документ
-#сьогодні треба в спортазал йти...
+#Поправляю помилки посилань до інпута

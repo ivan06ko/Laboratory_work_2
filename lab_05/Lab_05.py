@@ -36,7 +36,7 @@ def calculate_power(cube_counts):
 
 def main(file_path):
     """Основна функція для читання вхідного файлу та обробки ігор."""
-    bag_limits = {"red": 12, "green": 13, "blue": 14}
+    bag_limits = {"Червоний": 12, "Зелений": 13, "Чиній": 14}
     possible_games_sum = 0
     total_power_sum = 0
     
@@ -59,6 +59,6 @@ def main(file_path):
         print(f"⚠️ Файл не знайдено: {file_path}")
 
 # --- Виконання програми ---
-file_path = "C:\Users\777\Desktop\Laboratory_work_2\Laboratory_work_2\lab_05\input_5.txt"  # Шлях до вхідного файлу
+file_path = "C:\\Users\\777\\Desktop\\Laboratory_work_2\\Laboratory_work_2\\lab_05\\input_5.txt"  # Шлях до вхідного файлу
 main(file_path)
-#перша версія коду готова... треба уче поміняти, поламати і відновити, і так 15 а то й 20 рас....
+#??? версія коду. все стабільно

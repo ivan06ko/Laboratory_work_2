@@ -48,7 +48,7 @@ def read_input_file(file_path):
 
 
 if __name__ == "__main__":
-    file_path = "C:\Users\777\Desktop\Laboratory_work_2\Laboratory_work_2\lab_01\input.txt"  # Вказуємо назву файлу без зайвих підпапок
+    file_path = "C:\\Users\\777\\Desktop\\Laboratory_work_2\\Laboratory_work_2\\lab_01\\input.txt"  # Вказуємо назву файлу без зайвих підпапок
 
     left_list, right_list = read_input_file(file_path)
 

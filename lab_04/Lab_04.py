@@ -82,7 +82,7 @@ def calculate_directory_sizes(fs_tree, path="/"):
 
 
 # --- Головна частина програми ---
-file_path = "C:\Users\777\Desktop\Laboratory_work_2\Laboratory_work_2\lab_04\input.txt"  # Шлях до файлу
+file_path = "C:\\Users\\777\\Desktop\\Laboratory_work_2\\Laboratory_work_2\\lab_04\\input.txt"  # Шлях до файлу
 
 # Розбираємо файлову систему
 fs_tree = parse_terminal_output(file_path)

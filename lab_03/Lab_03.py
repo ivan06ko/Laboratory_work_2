@@ -64,7 +64,7 @@ def compute_calibration_sum(file_path):
 
 
 # --- Основний код ---
-input_file = "C:\Users\777\Desktop\Laboratory_work_2\Laboratory_work_2\lab_03\input.txt"  # Шлях до файлу
+input_file = "C:\\Users\\777\\Desktop\\Laboratory_work_2\\Laboratory_work_2\\lab_03\\input.txt"  # Шлях до файлу
 
 # Обчислюємо результати
 sum_main, sum_extra = compute_calibration_sum(input_file)
