@@ -1,10 +1,4 @@
 def parse_terminal_output(file_path):
-    """
-    Аналізує вивід терміналу та створює структуру директорій.
-
-    :param file_path: шлях до файлу
-    :return: словник, що відображає файлову систему
-    """
     fs_tree = {"/": {}}  # Ініціалізуємо кореневу директорію
     current_path = []  # Список для збереження поточного шляху
 
@@ -36,18 +30,11 @@ def parse_terminal_output(file_path):
         
         return fs_tree
     except FileNotFoundError:
-        print(f"⚠️ Файл не знайдено: {file_path}")
+        print(f"Файл не знайдено: {file_path}")
         return None
 
 
 def get_nested_dir(fs_tree, path):
-    """
-    Повертає вкладену директорію за вказаним шляхом.
-
-    :param fs_tree: структура файлової системи
-    :param path: список директорій, що визначає шлях
-    :return: вкладений словник (поточна директорія)
-    """
     current = fs_tree["/"]
     for directory in path:
         current = current[directory]
@@ -55,13 +42,6 @@ def get_nested_dir(fs_tree, path):
 
 
 def calculate_directory_sizes(fs_tree, path="/"):
-    """
-    Рекурсивно обчислює розміри всіх директорій.
-
-    :param fs_tree: структура файлової системи
-    :param path: поточний шлях
-    :return: словник {директорія: розмір}
-    """
     sizes = {}
     
     def helper(node, full_path):
@@ -98,4 +78,4 @@ if fs_tree:
     total_size = sum(filtered_sizes.values())
 
     print(f"Сума розмірів директорій ≤ 100000: {total_size}")
-#знову цей шматок коду. працюю над ним, а ще треба якось сімейні речі встигати робити... 
+#добрий день.
